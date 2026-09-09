@@ -5,20 +5,22 @@ const telaResultado = document.getElementById("tela-resultado");
 const botoesDificuldade = document.querySelectorAll(".botao-dificuldade")
 
 
+let dificuldade;
+
 
 botoesDificuldade.forEach(function(botao) {
 
-    console.log("Encontrei um botão!");
 
     botao.addEventListener("click", function(){
-        console.log("CLIQUEI!");
-        console.log(botao.dataset);
+        console.log(botao.dataset.dificuldade);
+        dificuldade = botao.dataset.dificuldade;
+        telaMenu.classList.add("escondido");
+        telaJogo.classList.remove("escondido");
     });
 
 });
 
 
-console.log("Teste")
 
 
 
