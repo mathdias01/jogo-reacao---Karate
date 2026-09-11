@@ -115,6 +115,18 @@ h1 {
     transform:scale(1.1);
 }
 
+.botao-dificuldade[data-dificuldade="facil"]{
+    background:linear-gradient(90deg, green, cyan );
+}
+
+.botao-dificuldade[data-dificuldade="normal"] {
+    background:linear-gradient(90deg, yellow, orange);
+}
+
+.botao-dificuldade[data-dificuldade="desafiador"]{
+    background:linear-gradient(90deg, red, purple);
+}
+
 @keyframes flutuar{
     0%{
         transform: translate(0px, 0px);
